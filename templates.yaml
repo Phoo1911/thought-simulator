@@ -1,0 +1,442 @@
+# Prompt templates for different thought types and patterns
+decision_making:
+  hierarchical_structure:
+    meta_level: |
+      You are simulating a structured decision-making thought process.
+      Purpose: To demonstrate a systematic and balanced decision-making approach
+      Approach: Consider multiple criteria and perspectives in a step-by-step analysis
+      Depth: ${depth}/10 (higher means more detailed exploration of each step)
+      Detail: ${detail}/10 (higher means more specific examples and considerations)
+    
+    structure_level: |
+      Follow these steps in your decision-making process:
+      1. Clarify the core decision to be made
+      2. Establish decision criteria
+      3. Generate potential options
+      4. Evaluate each option against criteria
+      5. Consider potential consequences
+      6. Weigh trade-offs
+      7. Reach a tentative conclusion
+      8. Test the decision by considering objections
+      9. Finalize the decision with justification
+    
+    content_level: |
+      Scenario: ${scenario}
+      
+      Think through this decision carefully, showing your reasoning at each step.
+      Format each thought as a separate step in your thinking process.
+      Each thought should build logically from previous thoughts.
+
+  multiple_perspective:
+    meta_level: |
+      You are simulating a decision-making process that incorporates multiple perspectives.
+      Purpose: To explore a decision from different viewpoints and frameworks
+      Approach: Analyze the decision through different lenses and stakeholder perspectives
+      Depth: ${depth}/10 (higher means more detailed exploration of each perspective)
+      Detail: ${detail}/10 (higher means more specific examples and considerations)
+    
+    structure_level: |
+      Analyze the decision from these different perspectives:
+      1. Analytical perspective (facts, data, logical analysis)
+      2. Emotional perspective (feelings, values, intuitions)
+      3. Risk management perspective (uncertainties, worst-case scenarios)
+      4. Creative perspective (novel options, innovative approaches)
+      5. Stakeholder perspective (impact on different parties)
+      
+      For each perspective:
+      - Identify key considerations
+      - Evaluate options through this lens
+      - Note strengths and limitations of this viewpoint
+      
+      Finally, integrate insights from all perspectives.
+    
+    content_level: |
+      Scenario: ${scenario}
+      
+      Explore this decision from multiple perspectives, showing how different viewpoints lead to different considerations.
+      Format each perspective as a separate section in your thinking process.
+      Conclude by integrating insights from all perspectives.
+
+  self_reflective:
+    meta_level: |
+      You are simulating a self-reflective decision-making process.
+      Purpose: To demonstrate metacognitive awareness during decision-making
+      Approach: Alternate between decision steps and reflection on the thinking process itself
+      Depth: ${depth}/10 (higher means more detailed exploration of each step)
+      Detail: ${detail}/10 (higher means more specific examples and considerations)
+     
+    
+    structure_level: |
+      Follow these steps, with reflection after each:
+      1. Clarify the decision
+         Reflection: Is the decision framed correctly? Any hidden assumptions?
+      2. Establish criteria
+         Reflection: Are these the right criteria? Any biases in selection?
+      3. Generate options
+         Reflection: How diverse are these options? Any creative alternatives missing?
+      4. Evaluate options
+         Reflection: Is the evaluation balanced? Any cognitive biases present?
+      5. Make tentative choice
+         Reflection: How confident am I in this choice? What might I be overlooking?
+      
+      Conclude with overall reflection on the decision process.
+    
+    content_level: |
+      Scenario: ${scenario}
+      
+      Work through this decision with metacognitive awareness, alternating between decision steps and reflection.
+      Format each step and its reflection separately.
+      Be honest about limitations, biases, and uncertainties in your thinking.
+
+ethical_reasoning:
+  self_reflective:
+    meta_level: |
+      You are simulating a self-reflective ethical reasoning process.
+      Purpose: To encourage ethical introspection and awareness during reasoning.
+      Depth: ${depth}/10
+      Detail: ${detail}/10
+    
+
+    structure_level: |
+      Follow these reflective steps:
+      1. Define the ethical issue.
+         Reflection: What personal values influence this view?
+      2. Clarify the stakeholders and principles.
+         Reflection: Am I being fair and inclusive in my consideration?
+      3. Evaluate ethical actions and consequences.
+         Reflection: Any emotional or cultural biases present?
+      4. Choose a position.
+         Reflection: How confident and accountable am I for this stance?
+      
+      Conclude with overall ethical reflection.
+
+    content_level: |
+      Scenario: ${scenario}
+      
+      Reflectively work through this ethical dilemma, alternating between analysis and reflection.
+      Format each step and its reflection separately.
+
+  hierarchical_structure:
+    meta_level: |
+      You are simulating a structured ethical reasoning process.
+      Purpose: To analyze an ethical dilemma systematically
+      Approach: Consider ethical principles, stakeholders, and consequences in a step-by-step analysis
+      Depth: ${depth}/10 (higher means more detailed ethical analysis)
+      Detail: ${detail}/10 (higher means more specific examples and considerations)
+      
+    
+    structure_level: |
+      Follow these steps in your ethical reasoning:
+      1. Identify the ethical issue or dilemma
+      2. Clarify relevant facts and uncertainties
+      3. Identify stakeholders and their interests
+      4. Consider applicable ethical principles
+      5. Evaluate potential actions and their consequences
+      6. Address conflicts between principles or values
+      7. Formulate a justified ethical position
+      8. Consider objections and limitations
+      9. Refine final position
+    
+    content_level: |
+      Scenario: ${scenario}
+      
+      Analyze this ethical situation carefully, showing your reasoning at each step.
+      Format each thought as a separate step in your ethical reasoning process.
+      Each thought should build logically from previous thoughts.
+
+  multiple_perspective:
+    meta_level: |
+      You are simulating an ethical reasoning process that incorporates multiple ethical frameworks.
+      Purpose: To explore an ethical situation from different theoretical perspectives
+      Approach: Analyze the situation through different ethical frameworks
+      Depth: ${depth}/10 (higher means more detailed exploration of each framework)
+      Detail: ${detail}/10 (higher means more specific examples and considerations)
+      
+    
+    structure_level: |
+      Analyze the ethical situation from these different frameworks:
+      1. Deontological perspective (duty, rights, principles)
+      2. Consequentialist perspective (outcomes, utility, harm reduction)
+      3. Virtue ethics perspective (character, virtues, flourishing)
+      4. Care ethics perspective (relationships, context, care)
+      5. Justice perspective (fairness, equality, distribution)
+      
+      For each framework:
+      - Identify key ethical considerations
+      - Evaluate potential actions through this lens
+      - Note strengths and limitations of this approach
+      
+      Finally, integrate insights from all frameworks.
+    
+    content_level: |
+      Scenario: ${scenario}
+      
+      Explore this ethical situation from multiple frameworks, showing how different approaches lead to different considerations.
+      Format each framework as a separate section in your reasoning process.
+      Conclude by integrating insights from all perspectives.
+
+creative_thinking:
+  hierarchical_structure:
+    meta_level: |
+      You are simulating a structured creative thinking process.
+      Purpose: To generate innovative ideas and solutions.
+      Approach: Follow a step-by-step creative process from challenge definition to refinement.
+      Depth: ${depth}/10
+      Detail: ${detail}/10
+
+    structure_level: |
+      Follow these steps in your creative process:
+      1. Define the creative challenge.
+      2. Gather relevant context and insights.
+      3. Brainstorm diverse initial ideas.
+      4. Explore analogies and novel associations.
+      5. Challenge assumptions and constraints.
+      6. Combine and enhance ideas.
+      7. Evaluate and select promising solutions.
+      8. Elaborate and refine.
+      9. Plan implementation or next steps.
+
+    content_level: |
+      Scenario: ${scenario}
+      
+      Show your creative thinking clearly at each step. Be bold and imaginative, while maintaining logical flow.
+
+  multiple_perspective:
+    meta_level: |
+      You are simulating a creative thinking process that draws from multiple perspectives.
+      Purpose: To enhance creativity through interdisciplinary and diverse viewpoints.
+      Approach: View the challenge from various lenses and merge insights.
+      Depth: ${depth}/10
+      Detail: ${detail}/10
+
+    structure_level: |
+      Examine the challenge from different creative angles:
+      1. Artistic perspective
+      2. Scientific/technical innovation
+      3. Business or practical impact
+      4. User or audience perspective
+      5. Ethical or cultural considerations
+      
+      For each:
+      - Note relevant insights and creative opportunities.
+      - Explore new ideas that arise from the perspective.
+      
+      Conclude by synthesizing the most compelling directions.
+
+    content_level: |
+      Scenario: ${scenario}
+      
+      Present your creative analysis from multiple lenses. Integrate ideas to propose a creative solution.
+
+  self_reflective:
+    meta_level: |
+      You are simulating a self-reflective creative thinking process.
+      Purpose: To show metacognitive awareness during creative exploration.
+      Approach: Alternate between creative steps and reflection on your thinking.
+      Depth: ${depth}/10
+      Detail: ${detail}/10
+
+    structure_level: |
+      Follow these steps, with reflection after each:
+      1. Define the creative challenge.
+         Reflection: Am I framing the problem in an open and imaginative way?
+      2. Generate initial ideas.
+         Reflection: Are my ideas diverse and unconventional?
+      3. Explore new combinations or perspectives.
+         Reflection: What surprises me? What assumptions am I questioning?
+      4. Refine and select promising ideas.
+         Reflection: What criteria guide my selection? Am I choosing boldly?
+      5. Final reflection on the creative journey.
+         Reflection: What did I learn about how I create?
+
+    content_level: |
+      Scenario: ${scenario}
+      
+      Present your creative process and self-reflection clearly. Each step should include both action and insight.
+
+
+hypothetical_scenario:
+  hierarchical_structure:
+    meta_level: |
+      You are simulating a structured exploration of a hypothetical scenario.
+      Purpose: To systematically analyze the implications of a hypothetical situation
+      Approach: Consider causes, effects, and system dynamics in a step-by-step analysis
+      Depth: ${depth}/10 (higher means more detailed scenario exploration)
+      Detail: ${detail}/10 (higher means more specific examples and considerations)
+     
+    
+    structure_level: |
+      Follow these steps in your scenario exploration:
+      1. Clarify the hypothetical scenario and its parameters
+      2. Identify key assumptions and uncertainties
+      3. Analyze immediate implications and effects
+      4. Explore second-order and systemic effects
+      5. Consider different stakeholder perspectives
+      6. Identify potential adaptation strategies
+      7. Evaluate long-term consequences
+      8. Identify early indicators and signals
+      9. Summarize key insights and implications
+    
+    content_level: |
+      Scenario: ${scenario}
+      
+      Explore this hypothetical scenario carefully, showing your reasoning at each step.
+      Format each thought as a separate step in your exploration process.
+      Consider both obvious and non-obvious implications.
+
+  multiple_perspective:
+    meta_level: |
+      You are simulating an exploration of a hypothetical scenario from multiple perspectives.
+      Purpose: To understand a hypothetical situation from different viewpoints
+      Approach: Analyze the scenario through different disciplinary and stakeholder lenses
+      Depth: ${depth}/10 (higher means more detailed exploration of each perspective)
+      Detail: ${detail}/10 (higher means more specific examples and considerations)
+      
+    
+    structure_level: |
+      Analyze the hypothetical scenario from these different perspectives:
+      1. Scientific/Technical perspective
+      2. Economic/Financial perspective
+      3. Social/Cultural perspective
+      4. Political/Governance perspective
+      5. Ethical/Moral perspective
+      
+      For each perspective:
+      - Identify key considerations and implications
+      - Analyze potential developments and responses
+      - Note unique insights from this viewpoint
+      
+      Finally, integrate insights from all perspectives.
+    
+    content_level: |
+      Scenario: ${scenario}
+      
+      Explore this hypothetical scenario from multiple perspectives, showing how different viewpoints reveal different implications.
+      Format each perspective as a separate section in your exploration.
+      Conclude by integrating insights from all perspectives.
+
+  self_reflective:
+    meta_level: |
+      You are simulating a self-reflective thinking process.
+      Purpose: To demonstrate metacognitive awareness during thinking
+      Approach: Alternate between analysis steps and reflection on the thinking process itself
+      Depth: ${depth}/10 (higher means more detailed exploration)
+      Detail: ${detail}/10 (higher means more specific examples)
+      
+    
+    structure_level: |
+      Follow these steps, with reflection after each:
+      1. Initial understanding
+         Reflection: What assumptions am I making? How am I framing this?
+      2. Analysis and exploration
+         Reflection: What thinking strategies am I using? Any biases present?
+      3. Consider alternatives
+         Reflection: How diverse is my thinking? What perspectives am I missing?
+      4. Evaluate and synthesize
+         Reflection: What criteria am I using? How confident am I in these conclusions?
+      5. Final thoughts
+         Reflection: How has my thinking evolved? What have I learned about my thinking process?
+    
+    content_level: |
+      Scenario: ${scenario}
+      
+      Work through this scenario with metacognitive awareness, alternating between analysis and reflection.
+      Format each step and its reflection separately.
+      Be honest about limitations, biases, and uncertainties in your thinking.
+
+# Default templates as fallback
+default:
+  hierarchical_structure:
+    meta_level: |
+      You are simulating a structured thinking process.
+      Purpose: To demonstrate systematic thinking about the given scenario
+      Approach: Consider multiple aspects in a step-by-step analysis
+      Depth: ${depth}/10 (higher means more detailed exploration)
+      Detail: ${detail}/10 (higher means more specific examples)
+     
+    
+    structure_level: |
+      Follow these steps in your thinking process:
+      1. Clarify the core question or issue
+      2. Analyze key components and factors
+      3. Consider multiple perspectives
+      4. Evaluate implications and consequences
+      5. Synthesize insights
+      6. Formulate conclusions
+      7. Consider limitations and next steps
+    
+    content_level: |
+      Scenario: ${scenario}
+      
+      Think through this scenario carefully, showing your reasoning at each step.
+      Format each thought as a separate step in your thinking process.
+      Each thought should build logically from previous thoughts.
+
+  multiple_perspective:
+    meta_level: |
+      You are simulating a thinking process that incorporates multiple perspectives.
+      Purpose: To explore a scenario from different viewpoints
+      Approach: Analyze the situation through different lenses
+      Depth: ${depth}/10 (higher means more detailed exploration)
+      Detail: ${detail}/10 (higher means more specific examples)
+      
+    
+    structure_level: |
+      Analyze the scenario from these different perspectives:
+      1. Analytical perspective (facts, data, logical analysis)
+      2. Creative perspective (possibilities, innovations, alternatives)
+      3. Critical perspective (challenges, limitations, concerns)
+      4. Practical perspective (implementation, resources, feasibility)
+      5. Holistic perspective (systems, interconnections, big picture)
+      
+      For each perspective:
+      - Identify key insights and considerations
+      - Note strengths and limitations of this viewpoint
+      
+      Finally, integrate insights from all perspectives.
+    
+    content_level: |
+      Scenario: ${scenario}
+      
+      Explore this scenario from multiple perspectives, showing how different viewpoints lead to different insights.
+      Format each perspective as a separate section in your thinking process.
+      Conclude by integrating insights from all perspectives.
+
+  self_reflective:
+    meta_level: |
+      You are simulating a self-reflective thinking process.
+      Purpose: To demonstrate metacognitive awareness during thinking
+      Approach: Alternate between analysis steps and reflection on the thinking process itself
+      Depth: ${depth}/10 (higher means more detailed exploration)
+      Detail: ${detail}/10 (higher means more specific examples)
+      
+    
+    structure_level: |
+      Follow these steps, with reflection after each:
+      1. Initial understanding
+         Reflection: What assumptions am I making? How am I framing this?
+      2. Analysis and exploration
+         Reflection: What thinking strategies am I using? Any biases present?
+      3. Consider alternatives
+         Reflection: How diverse is my thinking? What perspectives am I missing?
+      4. Evaluate and synthesize
+         Reflection: What criteria am I using? How confident am I in these conclusions?
+      5. Final thoughts
+         Reflection: How has my thinking evolved? What have I learned about my thinking process?
+    
+    content_level: |
+      Scenario: ${scenario}
+      
+      Work through this scenario with metacognitive awareness, alternating between analysis and reflection.
+      Format each step and its reflection separately.
+      Be honest about limitations, biases, and uncertainties in your thinking.
+
+baseline_cot:
+  hierarchical_structure:
+    meta_level: |
+      You are ChatGPT. Provide a concise answer to the scenario below.
+    structure_level: |
+      1. Think step‑by‑step and answer directly.
+    content_level: |
+      Scenario: ${scenario}
+
